@@ -84,7 +84,7 @@ const Home = () => {
             </div>
           </div>
           <div className="px-10 md:px-20 text-center">
-            <h3 className="text-xl font-bold  text-center">סיכום</h3>
+            <h3 className="text-xl font-bold  text-center">קצת עליי</h3>
             <br></br>
             <p className="para">
               אני נעם מרי, לוחם משוחרר, בוגר קורס Full – Stack. אני מביא איתי
