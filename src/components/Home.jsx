@@ -1,3 +1,4 @@
+import Carousle from "./Carousle";
 import "./home.css";
 import Cv from "./noam-mery-cv.docx";
 const Home = () => {
@@ -109,6 +110,13 @@ const Home = () => {
           src={require("../myImg.jpeg")}
           alt="Your Name Here"
         />
+      </section>
+      <hr className="bg-black/20 mb-20 mt-16"></hr>
+      <section className="h-auto">
+        <h1 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center underline decoration-4 decoration-blue-800 italic">
+          חלק מהפרוייקטים האחרונים שלי
+        </h1>
+        <Carousle />
       </section>
       <footer className="absolute w-full h-36  bottom-0 p-8 px-16 bg-gray-800 text-gray-50 text-center">
         <p className="text-2xl">Thank you for checking out my portfolio</p>
