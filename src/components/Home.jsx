@@ -1,6 +1,6 @@
 import Carousle from "./Carousle";
 import "./home.css";
-import Cv from "./noam-mery-cv.docx";
+import Cv from "./noam-mery-cv.pdf";
 const Home = () => {
   return (
     <div className="relative text-gray-800 bg-gray-50 overflow-hidden">
@@ -8,6 +8,8 @@ const Home = () => {
         <nav className="w-full">
           <div className="flex justify-around w-full px-16 py-8">
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://github.com/noammery"
               aria-label="Github"
               className="hover:text-blue-600"
@@ -22,6 +24,8 @@ const Home = () => {
               </svg>
             </a>
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/noam-mery/"
               aria-label="linkedin"
               className="hover:text-blue-600"
@@ -79,7 +83,7 @@ const Home = () => {
             <div className=" flex flex-col">
               <span className="text-lg ">MERN Stack</span>
               <span className="text-lg  ">Axios, Socket.io</span>
-              <span className="text-lg  ">C#, SQL</span>
+              <span className="text-lg  ">C#, SQL, .Net</span>
               <span className="text-lg  ">VS, VS Code</span>
             </div>
           </div>
@@ -98,7 +102,7 @@ const Home = () => {
             <h3 className="text-xl font-bold">יצירת - קשר</h3>
             <a
               className="text-xl hover:text-blue-600"
-              href="mailto:noammery55@nomail.com"
+              href="mailto:noammery55@gmail.com"
             >
               noammery55@email.com
             </a>
@@ -106,21 +110,26 @@ const Home = () => {
           </div>
         </div>
         <img
-          className="hidden md:block object-cover w-96 h-96 rounded-full ring-2 ring-gray-500/50 ring-offset-[30px]"
+          className="hidden md:block object-cover w-96 h-96 rounded-full ring-2 ring-gray-500 ring-offset-[30px]"
           src={require("../myImg.jpeg")}
           alt="Your Name Here"
         />
       </section>
       <hr className="bg-black/20 mb-20 mt-16"></hr>
       <section className="h-auto">
-        <h1 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center underline decoration-4 decoration-blue-800 italic">
+        <h1 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center underline decoration-4 decoration-blue-800 italic">
           חלק מהפרוייקטים האחרונים שלי
         </h1>
         <Carousle />
       </section>
-      <footer className="absolute w-full h-36  bottom-0 p-8 px-16 bg-gray-800 text-gray-50 text-center">
-        <p className="text-2xl">Thank you for checking out my portfolio</p>
-        <a className="text-lg" href="mailto:noammery55@gmail.com">
+      <footer className="absolute w-full h-36  bottom-0 p-8  bg-gray-800  text-center">
+        <p className="text-lg mb-6 text-blue-100/60">
+          Thank you for checking out my portfolio
+        </p>
+        <a
+          className="text-sm text-blue-200/90"
+          href="mailto:noammery55@gmail.com"
+        >
           noammery55@gmail.com
         </a>
       </footer>
